@@ -33,6 +33,9 @@ const StyledContent = styled.div`
   text-align: center;
   min-height: 900px;
   height: 100vh;
+  @media ${device.md} {
+    min-height: unset;
+  }
 `;
 
 const StyledHeading = styled.h1`
