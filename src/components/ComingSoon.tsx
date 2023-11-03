@@ -8,6 +8,10 @@ import { DesktopContainer, TabletContainer, device } from '@/theme/breakpoints';
 const SectionWrapper = styled.div`
   min-height: 900px;
   height: 100vh;
+  @media ${device.md} {
+    height: 100vh;
+    min-height: unset;
+  }
 `;
 
 const SectionBackground = styled.div<{ $url: string; $urlMobile: string }>`
@@ -56,13 +60,13 @@ const StyledText = styled.p`
 
 const ImageWrapper = styled.div`
   img {
-    width: 500px;
-    height: 500px;
+    width: 350px;
+    height: 350px;
   }
   @media ${device.sm} {
     img {
-      width: 250px;
-      height: 250px;
+      width: 200px;
+      height: 200px;
     }
   }
 `;
